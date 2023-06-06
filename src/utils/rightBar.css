@@ -1,0 +1,25 @@
+.outBox {
+    width: 120px;
+    height: auto;
+}
+ul.rightBar {
+    position: fixed;
+    background-color: var(--bg-color);
+    right: 0;
+    width: 120px;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 30px 10px;
+}
+
+ul.rightBar>li {
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: var(--bg1-color);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    cursor: pointer;
+}   
