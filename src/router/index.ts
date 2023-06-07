@@ -7,16 +7,6 @@ const routes = [
             component: () => import('../components/Article.vue'),
             children : [
     {
-        path: '/a',
-        name: 'a',
-        component: () => import('../views/a.vue'),
-        meta: {
-            name: 'a' ,
-            value: 0
-        }
-    },
-    
-    {
         path: '/ABC',
         name: 'ABC',
         component: () => import('../views/ABC.vue'),
@@ -33,6 +23,16 @@ const routes = [
         meta: {
             name: 'm' ,
             value: 4
+        }
+    },
+    
+    {
+        path: '/woshi',
+        name: 'woshi',
+        component: () => import('../views/woshi.vue'),
+        meta: {
+            name: 'woshi' ,
+            value: 5
         }
     },
     
@@ -57,22 +57,32 @@ const routes = [
     },
     
     {
-        path: '/杀杀杀',
-        name: '杀杀杀',
-        component: () => import('../views/杀杀杀.vue'),
+        path: '/我是一个测试',
+        name: '我是一个测试',
+        component: () => import('../views/我是一个测试.vue'),
         meta: {
-            name: '杀杀杀' ,
+            name: '我是一个测试' ,
             value: 6
         }
     },
     
     {
-        path: '/woshi',
-        name: 'woshi',
-        component: () => import('../views/woshi.vue'),
+        path: '/杀杀杀',
+        name: '杀杀杀',
+        component: () => import('../views/杀杀杀.vue'),
         meta: {
-            name: 'woshi' ,
-            value: 5
+            name: '杀杀杀' ,
+            value: 7
+        }
+    },
+    
+    {
+        path: '/a',
+        name: 'a',
+        component: () => import('../views/a.vue'),
+        meta: {
+            name: 'a' ,
+            value: 0
         }
     },
     ],
